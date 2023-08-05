@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>这是一个标题</title><!--标题-->
+<title>这是一个标题</title>
 <!--<script type="text/javascript">
     /* 手机打开提示 */
      var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
@@ -15,16 +15,23 @@
              break;
          }
      }
-</script>
-<script type="text/javascript">
+</script>-->
+<!--<script type="text/javascript">
 try {var urlhash = window.location.hash;
 if (!urlhash.match("fromapp"))
-{if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i)))
-{window.location="indexphone.html";}}}catch(err){}</script><!--检测到是移动端的跳转至移动版-->
+{if ((navigator.userAgent.match(/(linux|mac|windows)/i)))
+{window.location="index.html";}}}catch(err){}</script><!--检测到是移动端的跳转至移动版-->
 
-<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<style>
+html,body{height:90%;}
+</style>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">   
 </head>
 
+<!--<body background="beijing.jpg" style="background-size:100% 100%;
+background-attachment: fixed;width: 400px;
+margin: 0 auto;">-->
 		
 	<p><div  style="text-align:center"><!--logo居中--></p>
 			<img src="logo.png"><!--logo图片引用-->
@@ -34,7 +41,7 @@ if (!urlhash.match("fromapp"))
     
 				<body>
 					<!--搜索框-->
-			<!--<img src="1.png" class="zc" style="width:230px"/><!--左边可爱的猫猫-->
+			<!--<img src="1.png" class="zc" style="width:230px"/>左边可爱的猫猫-->
 			<div style="text-align:center"><!--百度搜索框居中-->
 			<script type="text/javascript">
 			function f1(){
@@ -51,42 +58,44 @@ if (!urlhash.match("fromapp"))
 			<body>
 	<p><div style="text-align:center"><!--第一个段落居中-->本网站由ydr(名字首字母)编写<br>此网站仅用于本人兴趣爱好。<br>
 	自己一个人编写，其中引用的图片及其音乐等由互联网获取<br>此网站由html5编写有问题就联系本人<br>这，就是一位学了2小时html我的作品<br>要在音乐播放器里添加音乐可联系本人邮箱:<br>3445097296@qq.com</div></p>
-	<!--<div class="yc">网易云音乐外置播放器-->
-		<!--<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=2&id=493911&auto=1&height=66"></iframe>
-网易云音乐(夏恋)(暂且废弃)-->
+	<!--<div style="text-align:center">网易云音乐外置播放器-
+		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=2&id=29747807&auto=0&height=66"></iframe>
+		网易云音乐(End time)（暂且废弃）-->
 	</div>
 	
 		
-		
+			<div style="text-align:center"><!--第二个段落居中--><div style="txet-align:center">不知道放啥好了，瞎放的（</div></div>
 		<body>
 		<div style="text-align:center"><!--放置图片居中--><img src="logo.png" "></div>
 		
 		</body>
-		<!--<<style>
-		html { font-size : 20px; }
-		 
-		@media only screen and (min-width: 401px){    
-			html { font-size: 25px !important;  }
-		}
-		 
-		@media only screen and (min-width: 428px){    
-			html { font-size: 26.75px !important;  }
-		}
-		 
-		@media only screen and (min-width: 481px){   
-			 html { font-size: 30px !important;  }
-		}
-		 
-		@media only screen and (min-width: 569px){    
-			html { font-size: 35px !important;  }
-		}
-		 
-		@media only screen and (min-width: 641px){    
-			html { font-size: 40px !important; }
-		}
-		</style>-->
-	<style>
+		<script type="text/javascript">
+		   (function (doc, win) {
+		      var docEl = doc.documentElement,
+		        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		        recalc = function () {
+		          var clientWidth = docEl.clientWidth;
+		          if (!clientWidth) return;
+		          docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';//其中“20”根据你设置的html的font-size属性值做适当的变化
+		        };
+		
+		      if (!doc.addEventListener) return;
+		      win.addEventListener(resizeEvt, recalc, false);
+		      doc.addEventListener('DOMContentLoaded', recalc, false);
+		    })(document, window);
+		</script>
+		
+		<style type="text/css">
+		优先级小
+		<style>
+		
+		<p style=" 优先级大"></p>
+		body{width: 90%!important; padding: 0px!important; margin:0px!important; min-width:350px!important;}
 
+	<style>
+@media screen and (max-width: 720px) {
+
+}
 	
 	.button {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
@@ -98,7 +107,7 @@ if (!urlhash.match("fromapp"))
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
-	margin: 4px 90px;
+	margin: 4px 100px;
 	cursor: pointer;
 	position:absolute;
 	border-radius:10px;
@@ -116,7 +125,7 @@ if (!urlhash.match("fromapp"))
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
-	margin: 4px -250px;
+	margin: 4px -180px;
 	cursor: pointer;
 	position:absolute;
 	border-radius:10px;
@@ -176,8 +185,9 @@ if (!urlhash.match("fromapp"))
 		
 		
 		<div style="text-align:center"><!--gif图片居中--><img src="helloword.gif" alt="" /></div>
-		<div style="text-align:center"><video width="460" height="240" controls>
+		<div style="text-align:center"><video width="320" height="240" controls>
 		<source src="ceshi.mp4" type="video/mp4"><!--引用视频-->
+		<p><a href="indexshoujitiaozhuan.html" >使用电脑端</a></p>
 		</div>
 		
 		
